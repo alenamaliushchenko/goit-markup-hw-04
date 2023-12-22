@@ -369,11 +369,16 @@ a:focus {
 .footer {
   padding: 100px 0;
   background-color: var(--primary-color);
-}
-.footer-top {
   display: flex;
   align-items: baseline;
+  /* justify-content: center;
+  align-items: center; */
+  /* gap: 100px; */
 }
+/* .footer-top {
+  display: flex;
+  align-items: baseline;
+} */
 .footer-logo {
   max-width: 264px;
 }
