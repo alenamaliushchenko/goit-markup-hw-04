@@ -319,7 +319,6 @@ a:focus {
 .portfolio-pic {
   overflow: hidden;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -368,16 +367,16 @@ a:focus {
 /*Footer styles*/
 
 .footer {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 16px;
   padding: 100px 0;
   background-color: var(--primary-color);
 }
-.footer-logo {
-  margin-right: 120px;
+.footer-top {
+  display: flex;
+  align-items: baseline;
 }
-
+.footer-logo {
+  max-width: 264px;
+}
 .footer-logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -395,20 +394,23 @@ a:focus {
   line-height: 1.5;
   color: var(--passive-background-color);
   letter-spacing: 0.02em;
-  max-width: 264px;
 }
-
-.socials-list-footer {
+.footer-socials {
+  margin-left: 120px;
+}
+.footer-socials-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
 }
-.socials-item-footer {
+.footer-socials-item {
   width: 40px;
   height: 40px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-link-footer {
+.footer-socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,20 +420,19 @@ a:focus {
   color: var(--passive-background-color);
   border-radius: 50%;
 }
-.socials-link-footer:hover,
-.socials-link-footer:focus {
+.footer-socials-link:hover,
+.footer-socials-link:focus {
   background-color: var(--hover-background-footer);
   color: var(--passive-background-color);
 }
-.socials-icon-footer {
+.footer-socials-icon {
   fill: currentColor;
 }
-.social-heading-footer {
+.footer-social-heading {
   display: flex;
   justify-content: center;
   align-items: start;
   color: var(--focus-color);
-  padding-bottom: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
