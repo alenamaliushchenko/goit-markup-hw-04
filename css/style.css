@@ -35,9 +35,6 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
-.link {
-  text-decoration: none;
-}
 button {
   font-size: 16px;
   font-style: normal;
@@ -45,7 +42,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-
+a {
+  text-decoration: none;
+}
 a:hover,
 a:focus {
   color: var(--active-background-color);
@@ -118,10 +117,8 @@ a:focus {
 .menu-link:focus {
   color: var(--active-background-color);
 }
-/* .menu-item:hover::before {
 
-} */
-.menu-item:hover::after {
+.menu-link.active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -399,8 +396,8 @@ a:focus {
   color: var(--passive-background-color);
   letter-spacing: 0.02em;
 }
-.footer-socials {
-}
+/* .footer-socials {
+} */
 .footer-socials-list {
   display: flex;
   justify-content: center;
